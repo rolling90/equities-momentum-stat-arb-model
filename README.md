@@ -1,4 +1,4 @@
-# Equities momentum systematic trading stat arb model
+# Equities momentum strategy - systematic trading stat arb model
 
 This project implements an **equities momentum trading model** in Python.  
 The strategy generates momentum trade entry signals that are supported by autocorrelation and if the market regime validates the long or short position.
@@ -11,14 +11,12 @@ Purpose:
 - No python knowledge before 9 June 2025. Today 28 September 2025. 16 weeks of learning.
 
 Methodology:
-- download data for an equity index and its constituents
-- clean data
-- calculate momentum signal
-- calculate autocorrelation to validate signal
+- download and clean data for an equity index and its constituents
+- calculate momentum signal for each ticker
+- calculate autocorrelation for each ticker
 - calculate market regime as "risk on/off" using a compsite of risk regime indicators
-- execute trade entry if the momentum signal is validated by both autocorrelation (persistence) and the market regime
-- define performance calculation and presentation functions
-- scale positions by rolling volatility
+- execute trade entry if the momentum signal is validated by both autocorrelation (persistence in the ticker's price history) and the market regime
+- scale positions by contribution to portfolio VaR budget
 - optimse for portfolio VaR limit
 - execute stratey for optimised portfolio VaR limit
 - display performance chart (returns) and summary data (returns, sharpe, mad DD, etc)

@@ -1,7 +1,7 @@
 # Equities momentum strategy - systematic trading stat arb model
 
 This project implements an **equities momentum trading model** in Python.  
-The strategy generates momentum long/short trade entry signals for single name equities that are validated by autocorrelation and a market regime "risk on/off" indicator.
+The strategy generates momentum long/short trade entry signals for single name equities, validated by autocorrelation and market regime "risk on/off" indicators.
 
 ---
 

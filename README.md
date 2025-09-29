@@ -14,7 +14,7 @@ Methodology:
 - download and clean data for an equity index and its constituents
 - calculate momentum signal for each ticker
 - calculate autocorrelation for each ticker
-- calculate market regime as "risk on/off" using a compsite of risk regime indicators
+- calculate market regime as "risk on/off" using a compsite of risk regime indicators (VIX, Gold, US10yTreasury)
 - execute trade entry if the momentum signal is validated by both autocorrelation (persistence in the ticker's price history) and the market regime
 - scale positions by contribution to portfolio VaR budget
 - optimse for portfolio VaR limit
